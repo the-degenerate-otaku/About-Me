@@ -285,3 +285,94 @@ a:hover {
     color: var(--muted);
     margin-bottom: 2.5rem;
 }
+
+.contact_btn {
+    display: inline-block;
+    padding: 1rem 2.5rem;
+    font-size: 1.1rem;
+    font-weight: 600;
+    background: var(--txt);
+    color: var(--bg);
+    border-radius: 4px;
+    transition: 0.2s;
+
+}
+
+.contact_btn:hover {
+    opacity: 0.9; 
+}
+
+
+.contact_socials {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 2.5rem;
+
+}
+
+.contact_socials a {
+    font-size: 1rem;
+    color: var(--muted);
+    text-decoration: underline;
+
+}
+
+.footer {
+    padding: 2rem 0;
+    border-top: 1px solid var(--border);
+    text-align: center;
+
+}
+
+.footer_text {
+    font-size: 0.8rem;
+    color: var(--muted);
+
+}
+
+
+@keyframes blink {
+
+    from,
+    to{
+        border-color: transparent;
+    }
+
+    50% {
+        border-color: var(--txt);
+
+    }
+}
+
+.slide-in {
+    opacity: 0;
+    transform: translateX(60px);
+    transition: opacity 0.8s cubic-bezier(0.16, 1, 0.3, 1), tranform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.slide-in.active {
+    opacity: 1;
+    transform: translateX(0);
+
+}
+
+.fade-in-scroll {
+    opacity: o;
+    transform: translateY(20px);
+    transition: opacity 0.8s ease, transform 0.8s ease;
+
+}
+
+.fade-in-scroll.active {
+    opacity: 1;
+    transform: translateY(0);
+
+}
+
+@media (max-width: 768px) {
+    .about-skills-container {
+        grid-template-columns: 1fr;
+        gap: 2.5rem;
+    }
+}
