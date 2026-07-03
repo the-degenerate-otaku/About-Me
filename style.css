@@ -15,35 +15,45 @@
 
 html {
     font-family: 'Inter', sans-serif;
-    background: var(--bg) linear-gradient(rgba(0, 0, 0, 0.8)) fixed centre/cover no-repeat; 
+    background: var(--bg);
     color: var(--txt);
     line-height: 1.7;
     font-size: 1.15rem;
-    -webkit-font-smoothing: antialisased;
-
+    -webkit-font-smoothing: antialiased;
+    scroll-behavior: smooth;
 }
-
+.container {
+    max-width: 1100px;
+    margin: 0 auto; 
+    padding: 0 1.5rem; 
+}
 a {
     color:var(--txt);
     text-decoration:none;
-    transition: opactiy 0.2s;
+    transition: opacity 0.2s;
 
 }
 a:hover {
     opacity:0.8;
 
 }
+.hero {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+}
 
 .hero_content {
     max-width: 800px;
 
 }
- 
+
 .hero_greeting {
     font-size: 1.3rem;
     font-weight: 600;
     color: var(--muted);
-    margin-bottom: 1rem;
+    margin-bottom: 0;         
+    line-height: 1;          
     border-right: 2px solid var(--txt);
     white-space: nowrap;
     display: inline-block;
@@ -53,11 +63,11 @@ a:hover {
 .hero_name {
     font-size: clamp(3.2rem, 7vw, 4.8rem);
     font-weight: 800;
-    margin-bottom: 1.5rem;
+    margin-top: -0.5rem;     
+    margin-bottom: 0.6rem;
     opacity: 0;
     transform: translateY(15px);
     transition: 0.8s ease 0.2s;
-
 }
 
 .hero_name span {
@@ -86,7 +96,7 @@ a:hover {
 
 .btn {
     display: inline-block;
-    padding: 0.9rem rem;
+    padding: 0.9rem 1.8rem;
     font-size: 1rem;
     font-weight: 600;
     border: 1px solid var(--border);
@@ -104,7 +114,7 @@ a:hover {
 
 .btn--primary:hover  {
     background: transparent;
-    color: var(--bg);
+    color: var(--txt);
     border-color: var(--txt);
 
 }
@@ -185,6 +195,10 @@ a:hover {
     font-weight: 600;
 
 }
+.section {
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
 
 .projects_main-title {
     font-size: 3.5rem;
@@ -260,7 +274,7 @@ a:hover {
 .project-card_link {
     font-size: 0.95rem ;
     font-weight: 600;
-    text-transform: underline;
+    text-decoration: underline;
 }
 
 .contact_wrapper {
@@ -348,7 +362,7 @@ a:hover {
 .slide-in {
     opacity: 0;
     transform: translateX(60px);
-    transition: opacity 0.8s cubic-bezier(0.16, 1, 0.3, 1), tranform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+    transition: opacity 0.8s cubic-bezier(0.16, 1, 0.3, 1), transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
 .slide-in.active {
@@ -358,7 +372,7 @@ a:hover {
 }
 
 .fade-in-scroll {
-    opacity: o;
+    opacity: 0;
     transform: translateY(20px);
     transition: opacity 0.8s ease, transform 0.8s ease;
 

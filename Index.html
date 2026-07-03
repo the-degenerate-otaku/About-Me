@@ -14,22 +14,23 @@
       href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="style.css" />
-    <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css?v=2" />
   </head>
 
   <body>
     <section class="hero" id="home">
       <div class="container">
-        <p class="hero_greeting"></p>
-        <h1 class="hero_name">Hi I am <span>Abhiram B</span></h1>
-        <p class="hero_tagline">
-          I'm a CS student who is passionate about coding, Tech, and solving
-          problems
-        </p>
-        <div class="hero_actions">
-          <a href="#projects" class="btn btn--primary">View My Work</a>
-          <a href="#contact" class="btn btn--outline">Get in touch</a>
+        <div class="hero_content">
+          <p class="hero_greeting"></p>
+          <h1 class="hero_name">HI I am <span>Abhiram B</span></h1>
+          <p class="hero_tagline">
+            I'm a CS student who is passionate about coding, Tech, and solving
+            problems
+          </p>
+          <div class="hero_actions">
+            <a href="#projects" class="btn btn--primary">View My Work</a>
+            <a href="#contact" class="btn btn--outline">Get in touch</a>
+          </div>
         </div>
       </div>
     </section>
@@ -52,18 +53,18 @@
             part of the experience i suppose.
           </p>
         </div>
-        <div class="skill-block">
+        <div class="skills-block">
           <h3 class="skills_title">Skills</h3>
-          <div class="skills_grind">
-            <div class="skills-card">
+          <div class="skills_grid">
+            <div class="skill-card">
               <span class="skill-icon">⚡</span
               ><span class="skill-name"> HTML & CSS</span>
             </div>
-            <div class="skills-card">
+            <div class="skill-card">
               <span class="skill-icon">JS</span
               ><span class="skill-name">JavaScript</span>
             </div>
-            <div class="skills-card">
+            <div class="skill-card">
               <span class="skill-icon">⚙️</span
               ><span class="skill-name">Git & GitHub</span>
             </div>
@@ -75,18 +76,18 @@
     <section class="section" id="projects">
       <div class="container">
         <h2 class="projects_main-title fade-in-scroll">Featured Projects</h2>
-        <div class="projects_grind fade-in-scroll">
+        <div class="projects_grid fade-in-scroll">
           <article class="project-card">
             <div class="project-card_body">
               <h3 class="project-card_title">Chip-8 Emulator</h3>
-              <p class="projects-card_desc">
+              <p class="project-card_desc">
                 A Chip-8 virtual machine and interpreter built in JavaScript,
                 designed to learn the basics of Emulators.
               </p>
               <div class="project-card_tags">
                 <span class="project-card_tag">JavaScript</span>
               </div>
-              <div class="project-cards_links">
+              <div class="project-card_links">
                 <a
                   href="https://github.com/the-degenerate-otaku/Chip-8"
                   class="project-card_link"
@@ -100,7 +101,7 @@
           <article class="project-card">
             <div class="project-card_body">
               <h3 class="project-card_title">Daily Dose OF Memes</h3>
-              <p class="project-class_desc">
+              <p class="project-card_desc">
                 A web based meme viewer that pulls live memes from Reddit
               </p>
               <div class="project-card_tags">
@@ -108,7 +109,7 @@
                 ><span class="project-card_tag">CSS</span
                 ><span class="project-card_tag">JS</span>
               </div>
-              <div class="project-cards_links">
+              <div class="project-card_links">
                 <a
                   href="https://github.com/the-degenerate-otaku/Daily-Dose-Of-Memes"
                   class="project-card_link"
@@ -131,7 +132,7 @@
                 ><span class="project-card_tag">CSS</span
                 ><span class="project-card_tag">JS</span>
               </div>
-              <div class="project-cards_links">
+              <div class="project-card_links">
                 <a
                   href="https://github.com/the-degenerate-otaku/Flux-OS"
                   class="project-card_link"
@@ -151,7 +152,7 @@
           </article>
         </div>
 
-        <div class="contact-wrapper fade-in-scroll" id="contact">
+        <div class="contact_wrapper fade-in-scroll" id="contact">
           <h2 class="contact_message">
             I'm currently looking for new opportunities and collaborations. Feel
             free to reach out!
@@ -159,7 +160,7 @@
           <a href="mailto:abhirambofficial@gmail.com" class="contact_btn"
             >Say Hello</a
           >
-          <div class="contact socials">
+          <div class="contact_socials">
             <a
               href="https://github.com/the-degenerate-otaku"
               target="_blank"
@@ -179,8 +180,9 @@
 
     <footer class="footer">
       <div class="container">
-        <p class="foot_text">&copy; 2026 Abhiram B.</p>
+        <p class="footer_text">&copy; 2026 Abhiram B.</p>
       </div>
     </footer>
+    <script src="script.js"></script>
   </body>
 </html>
