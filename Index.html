@@ -1,101 +1,186 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Abhiram B | Personal Profile</title>
+    <meta
+      name="description"
+      content="Personal profile of Abhiram B, a CS student."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js"></script>
+  </head>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width= device-width, initial-scale=1.0">
-    <title>
-        Abhiram B | Personal Profile</title>
-        <meta name="description" content="Perosnal profile of Abhiram B, a CS student.">
-        <link rel = "preconnect" href="https://fonts.googleapis.com">
-        <link rel = "preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href = "https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="style.css">
-        <script src="script.js"></script>
-         </head>
-
-<body>
+  <body>
     <section class="hero" id="home">
-        <div class ="container">
-            <p class ="hero_greeting"> </p>
-            <h1 class ="hero_name">Hi I am<span>Abhiram B</span></h1>
-            <p class="hero_tagline">Im a CS student who is passionate about coding, Tech, and solving problems</p>
-            <div class = hero_actions">
-                 <a href="#projects" class="btn btn--primary">View My Work</a>
-                 <a href="#contact"class="btn btn--outline">Get in touch</a>
-            </div>
+      <div class="container">
+        <p class="hero_greeting"></p>
+        <h1 class="hero_name">Hi I am <span>Abhiram B</span></h1>
+        <p class="hero_tagline">
+          I'm a CS student who is passionate about coding, Tech, and solving
+          problems
+        </p>
+        <div class="hero_actions">
+          <a href="#projects" class="btn btn--primary">View My Work</a>
+          <a href="#contact" class="btn btn--outline">Get in touch</a>
         </div>
+      </div>
     </section>
 
     <section class="section slide-in" id="about">
-        <div class="container">
-            <div class="about-text-block">
-                <h2 class="about_title">About Me</h2>
-                <p class="about_desc">I am currently learning CS.Everything began with me wondering how every system i used worked and i fell to that rabbit hole pretty hard starting the how phones worked which went to apps, games then my intrest spread along alot fo the tech fields and then I ended up in the coding field and so here I am making small small projects </p>
-                <p class="about_desc">I have had alot off fun coding different projects and enjoying the initial enjoyment of coding even though I have my tough times in alot of projects especially coding in JS and debugging though its part of the experience i suppose</p>
-            </div>
-            <div class="skill-block">
-                <h3 class="skills_title">Skills</h3>
-                <div class="skills_grind">
-                    <div class="skills-card"><span class="skill-icon">⚡</span><span class="skill-name"> HTML & CSS</span></div>
-                <div class="skill-card"><span class="skill-icon">JS</span><span class="skill-name">JavaScript</span></div>
-                <div class="skill-card"><span class="skill-icon">⚙️</span><span class="skill-name">Git&Github</span></div>
-                </div>
-            </div>
+      <div class="container">
+        <div class="about-text-block">
+          <h2 class="about_title">About Me</h2>
+          <p class="about_desc">
+            I am currently learning CS. Everything began with me wondering how
+            every system I used worked and I fell into that rabbit hole pretty
+            hard starting with how phones worked which went to apps, games then
+            my interest spread along a lot of the tech fields and then I ended
+            up in the coding field and so here I am making small projects.
+          </p>
+          <p class="about_desc">
+            I have had a lot of fun coding different projects and enjoying the
+            initial enjoyment of coding even though I have my tough times in a
+            lot of projects especially coding in JS and debugging though its
+            part of the experience i suppose.
+          </p>
         </div>
+        <div class="skill-block">
+          <h3 class="skills_title">Skills</h3>
+          <div class="skills_grind">
+            <div class="skills-card">
+              <span class="skill-icon">⚡</span
+              ><span class="skill-name"> HTML & CSS</span>
+            </div>
+            <div class="skills-card">
+              <span class="skill-icon">JS</span
+              ><span class="skill-name">JavaScript</span>
+            </div>
+            <div class="skills-card">
+              <span class="skill-icon">⚙️</span
+              ><span class="skill-name">Git & GitHub</span>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
 
     <section class="section" id="projects">
-        <div class="container">
-            <h2 class="projects_main-title fade-in-scroll">Featured Projects</h2>
-            <div class="projects_grind fade-in-scroll">
-                <article class="project-card_body">
-                    <h3 class="project-card_title">Chip-8 Emulator</h3>
-                    <p class="projects-card_desc">A Chip-8 virtual machine and interpreter built in JavaScript, designed to basics of Emulator</p>
-                    <div class="project-card_tags"><span class="project-card_tag">JavaScript</span></div>
-                    <div class="project-cards_links">
-                        <a href="https://github.com/the-degenerate-otaku/Chip-8" class="project-card_link" target="_blank" rel="noopener noreferrer">Code</a>
-                    </div>
-                </div>
-            </article>
-            <article class="project-card">
-                <div class="project-card_body">
-                    <h3 class="project-card_title">Daily Dose OF Memes</h3>
-                    <p class="project-class_desc">A web based meme viewer that pulls live memes from Reddit</p>
-                    <div class="project-card_tags">
-                        <span class="project-card_tag">HTML</span><span classs="peoject-card_tag">CSS</span><span class="project-card_tag">JS</span>
-                    </div>
-                    <div cllass="project-cards_links">
-                        <a href="//github.com/the-degenerate-otaku/Daily-Dose-Of-Memes" class="project-card_link" target="_blank" rel="noopener noreferrer">Code</a>
-                    </div>
-                </div>
-            </article>
-            <article class="project-card">
-                <div class="project-card_body">
-                    <h3 class="project-card_title">Flux OS</h3>
-                    <p class="project-card_desc">A complete Web-OS replica running in browser</p>
-                    <div class="project-card_tags">
-                        <span class="project-card_tag">HTML</span><span class="project-card_tag">CSS</span><span classs="Project-card_tag"_blank rel="noopener noreferrer">Code</span>
-                        <a href="https://the-degenerate-otaku.github.io/Flux-OS/" class="project-card_link"target="_blank" rel="noopener noreferrer">Live Demo</a>
-                    </div>
-                </div>
-            </article>
-                </div>
-                <div class="contact-wrappper fade-in-scroll"id="contact">
-                    <h2 class="contacct_message">I'm currently looking for new opportunities and collaborations. Feel free to reach out!</h2>
-                    <a href="mailto:abhirambofficial@gmail.com" class="contact_btn">Say Hello</a>
-                    <div class="contact socials">
-                        <a href="https://github.com/the-degenerate-otaku" target="_blank" rel="noopener noreferrer">GitHub</a>
-                        <a href="https://www.instagram.com/abhi3ram_/?utm_source=ig_web_button_share_sheet" target="_blank" rel="noopener noreferrer">Instagram</a>
-                    </div>
-                </div>
-             </div>
+      <div class="container">
+        <h2 class="projects_main-title fade-in-scroll">Featured Projects</h2>
+        <div class="projects_grind fade-in-scroll">
+          <article class="project-card">
+            <div class="project-card_body">
+              <h3 class="project-card_title">Chip-8 Emulator</h3>
+              <p class="projects-card_desc">
+                A Chip-8 virtual machine and interpreter built in JavaScript,
+                designed to learn the basics of Emulators.
+              </p>
+              <div class="project-card_tags">
+                <span class="project-card_tag">JavaScript</span>
+              </div>
+              <div class="project-cards_links">
+                <a
+                  href="https://github.com/the-degenerate-otaku/Chip-8"
+                  class="project-card_link"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Code</a
+                >
+              </div>
+            </div>
+          </article>
+          <article class="project-card">
+            <div class="project-card_body">
+              <h3 class="project-card_title">Daily Dose OF Memes</h3>
+              <p class="project-class_desc">
+                A web based meme viewer that pulls live memes from Reddit
+              </p>
+              <div class="project-card_tags">
+                <span class="project-card_tag">HTML</span
+                ><span class="project-card_tag">CSS</span
+                ><span class="project-card_tag">JS</span>
+              </div>
+              <div class="project-cards_links">
+                <a
+                  href="https://github.com/the-degenerate-otaku/Daily-Dose-Of-Memes"
+                  class="project-card_link"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Code</a
+                >
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div class="project-card_body">
+              <h3 class="project-card_title">Flux OS</h3>
+              <p class="project-card_desc">
+                A complete Web-OS replica running in browser
+              </p>
+              <div class="project-card_tags">
+                <span class="project-card_tag">HTML</span
+                ><span class="project-card_tag">CSS</span
+                ><span class="project-card_tag">JS</span>
+              </div>
+              <div class="project-cards_links">
+                <a
+                  href="https://github.com/the-degenerate-otaku/Flux-OS"
+                  class="project-card_link"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Code</a
+                >
+                <a
+                  href="https://the-degenerate-otaku.github.io/Flux-OS/"
+                  class="project-card_link"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Live Demo</a
+                >
+              </div>
+            </div>
+          </article>
         </div>
+
+        <div class="contact-wrapper fade-in-scroll" id="contact">
+          <h2 class="contact_message">
+            I'm currently looking for new opportunities and collaborations. Feel
+            free to reach out!
+          </h2>
+          <a href="mailto:abhirambofficial@gmail.com" class="contact_btn"
+            >Say Hello</a
+          >
+          <div class="contact socials">
+            <a
+              href="https://github.com/the-degenerate-otaku"
+              target="_blank"
+              rel="noopener noreferrer"
+              >GitHub</a
+            >
+            <a
+              href="https://www.instagram.com/abhi3ram_/?utm_source=ig_web_button_share_sheet"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Instagram</a
+            >
+          </div>
+        </div>
+      </div>
     </section>
+
     <footer class="footer">
-        <div class="container">
-            <p class="foot_text">&copy; 2026 Abhiram B.</p>
-        </div>
+      <div class="container">
+        <p class="foot_text">&copy; 2026 Abhiram B.</p>
+      </div>
     </footer>
-</body>
+  </body>
 </html>

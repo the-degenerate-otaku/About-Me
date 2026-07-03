@@ -1,10 +1,10 @@
 document.addEventListener('DOMContentLoaded', () => {
-    const el = document.querySelecctor('.hero_greeting'), txt = "Hello World";
+    const el = document.querySelector('.hero_greeting'), txt = "Hello World";
     let i = 0;
     const type = () => {
         if (i < txt.length) {
             el.textContent += txt[i++];
-            setTimeout(ype, 80);
+            setTimeout(type, 80);
         } else {
             el.style.borderRight = 'none';
             document.querySelectorAll('.hero_content > *:not(.hero_greeting)').forEach(c => {
@@ -21,5 +21,5 @@ document.addEventListener('DOMContentLoaded', () => {
     }),
         { threshold: 0.15, rootMargin: '0px 0px -50px 0px ' });
 
-    document.querySelectorAll('.slide-in, .fade-in-scroll').forEach(x => obs.observer(x));
+    document.querySelectorAll('.slide-in, .fade-in-scroll').forEach(x => obs.observe(x));
 });
